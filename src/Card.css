@@ -1,0 +1,14 @@
+.Card {
+  background: #fff;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.Card:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 19px 1px rgba(222, 238, 69, 0.57);
+  -webkit-box-shadow: 10px 10px 19px 1px rgba(222, 238, 69, 0.57);
+  -moz-box-shadow: 10px 10px 19px 1px rgba(222, 238, 69, 0.57);
+}
