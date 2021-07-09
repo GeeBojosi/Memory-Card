@@ -14,9 +14,11 @@ export default class Game extends Component {
     this.state = {
       characters: [],
       score: 0,
-      bestScore: 0,
+      highScore: 0,
+      clickeId: [],
+      loading: true,
     };
-    this.increment = this.increment.bind(this);
+    this.handleScore = this.handleScore.bind(this);
   }
 
   async componentDidMount() {
@@ -33,6 +35,7 @@ export default class Game extends Component {
     this.shuffle(characters);
     this.setState({
       characters: characters,
+      loading: false,
     });
   }
 
@@ -63,25 +66,54 @@ export default class Game extends Component {
     return arr;
   }
 
+  handleScore(id) {
+    const { clickeId, characters } = this.state;
+    if (clickeId.length === 0 || !clickeId.includes(id)) {
+      this.increment();
+      this.state.clickeId.push(id);
+      this.setState(st => ({
+        clickeId: [...st.clickeId],
+      }));
+    } else if (clickeId.includes(id)) {
+      alert('Game over click OK to start');
+      this.setState(st => ({
+        score: 0,
+        highScore: st.score + st.highScore,
+        clickeId: [],
+      }));
+    } else if (clickeId.length === characters.length) {
+      alert('Congratulation you win!');
+    }
+  }
+
   increment() {
     this.setState(st => ({
       score: st.score + 1,
     }));
-
     this.shuffle(this.state.characters);
   }
 
   render() {
+    const { score, highScore, characters, loading } = this.state;
+
+    if (loading) {
+      return (
+        <div>
+          <h1>Loading...</h1>
+        </div>
+      );
+    }
     return (
       <>
-        <Header score={this.state.score} bestScore={this.state.bestScore} />
+        <Header score={score} highScore={highScore} />
         <div className='Game'>
-          {this.state.characters.map(c => (
+          {characters.map(c => (
             <Card
+              id={c.id}
               image={c.image}
               name={c.name}
               key={c.name}
-              increment={this.increment}
+              handleScoring={this.handleScore}
             />
           ))}
         </div>

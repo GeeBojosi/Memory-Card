@@ -7,13 +7,14 @@ export default class Card extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    this.props.increment();
+    this.props.handleScoring(this.props.id);
   }
   render() {
+    const { image, name } = this.props;
     return (
       <div className='Card' onClick={this.handleClick}>
-        <img src={this.props.image} alt={this.props.name} />
-        <p>{this.props.name}</p>
+        <img src={image} alt={name} />
+        <p>{name}</p>
       </div>
     );
   }
