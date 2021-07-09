@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/GeeBojosi/Memory-Card/static/css/main.26a90c37.chunk.css",
-    "main.js": "/GeeBojosi/Memory-Card/static/js/main.863fe652.chunk.js",
-    "main.js.map": "/GeeBojosi/Memory-Card/static/js/main.863fe652.chunk.js.map",
-    "runtime-main.js": "/GeeBojosi/Memory-Card/static/js/runtime-main.0807cdf5.js",
-    "runtime-main.js.map": "/GeeBojosi/Memory-Card/static/js/runtime-main.0807cdf5.js.map",
-    "static/js/2.ed378305.chunk.js": "/GeeBojosi/Memory-Card/static/js/2.ed378305.chunk.js",
-    "static/js/2.ed378305.chunk.js.map": "/GeeBojosi/Memory-Card/static/js/2.ed378305.chunk.js.map",
-    "static/js/3.d6bc724e.chunk.js": "/GeeBojosi/Memory-Card/static/js/3.d6bc724e.chunk.js",
-    "static/js/3.d6bc724e.chunk.js.map": "/GeeBojosi/Memory-Card/static/js/3.d6bc724e.chunk.js.map",
-    "index.html": "/GeeBojosi/Memory-Card/index.html",
-    "static/css/main.26a90c37.chunk.css.map": "/GeeBojosi/Memory-Card/static/css/main.26a90c37.chunk.css.map",
-    "static/js/2.ed378305.chunk.js.LICENSE.txt": "/GeeBojosi/Memory-Card/static/js/2.ed378305.chunk.js.LICENSE.txt"
+    "main.css": "/Memory-Card/static/css/main.26a90c37.chunk.css",
+    "main.js": "/Memory-Card/static/js/main.863fe652.chunk.js",
+    "main.js.map": "/Memory-Card/static/js/main.863fe652.chunk.js.map",
+    "runtime-main.js": "/Memory-Card/static/js/runtime-main.fb1fd3f0.js",
+    "runtime-main.js.map": "/Memory-Card/static/js/runtime-main.fb1fd3f0.js.map",
+    "static/js/2.ed378305.chunk.js": "/Memory-Card/static/js/2.ed378305.chunk.js",
+    "static/js/2.ed378305.chunk.js.map": "/Memory-Card/static/js/2.ed378305.chunk.js.map",
+    "static/js/3.d6bc724e.chunk.js": "/Memory-Card/static/js/3.d6bc724e.chunk.js",
+    "static/js/3.d6bc724e.chunk.js.map": "/Memory-Card/static/js/3.d6bc724e.chunk.js.map",
+    "index.html": "/Memory-Card/index.html",
+    "static/css/main.26a90c37.chunk.css.map": "/Memory-Card/static/css/main.26a90c37.chunk.css.map",
+    "static/js/2.ed378305.chunk.js.LICENSE.txt": "/Memory-Card/static/js/2.ed378305.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0807cdf5.js",
+    "static/js/runtime-main.fb1fd3f0.js",
     "static/js/2.ed378305.chunk.js",
     "static/css/main.26a90c37.chunk.css",
     "static/js/main.863fe652.chunk.js"
